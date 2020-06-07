@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <last_registered_on>2020-06-07 12:39:37</last_registered_on>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2020-06-07 10:51:23</sys_created_on>
+        <sys_id>2e1267341b11d450a6c2cbb8274bcb37</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>65BF50DBB3B3B5645E498345F0995159182EDC989AE3BE0DC35804ECAE8031D0</sys_name>
+        <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Request Application">ac7f61d273122300d63a566a4cf6a78b</sys_push_application_id>
+        <sys_push_platform_id display_value="Apple">20e71f30ff0002009738ffffffffff6b</sys_push_platform_id>
+        <sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_2e1267341b11d450a6c2cbb8274bcb37</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2020-06-07 12:39:37</sys_updated_on>
+        <sys_user_id display_value="Dylan Lindgren">bf50fcff1bc410108a8a631d274bcbcb</sys_user_id>
+        <token>65BF50DBB3B3B5645E498345F0995159182EDC989AE3BE0DC35804ECAE8031D0</token>
+    </sys_push_notif_app_install>
+</record_update>

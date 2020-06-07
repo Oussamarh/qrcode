@@ -3,7 +3,7 @@
         <condition_order>-1</condition_order>
         <datasource_table>sys_user</datasource_table>
         <datasource_table_condition/>
-        <embedded_screen display_value="Quick-scan a barcode">f9ce5c181b9514508a8a631d274bcb89</embedded_screen>
+        <embedded_screen/>
         <item_view display_value="Quick-scan a barcode Item View">f9ce5c181b9514508a8a631d274bcb7d</item_view>
         <name>Quick-scan a barcode Master Item</name>
         <sys_class_name>sys_sg_master_item</sys_class_name>

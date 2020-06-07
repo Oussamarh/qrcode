@@ -3,7 +3,7 @@
         <interleave_order_direction>asc</interleave_order_direction>
         <name>Item Stream Segment</name>
         <order>10</order>
-        <screen display_value="Quick-scan a barcode">71ce5c181b9514508a8a631d274bcb80</screen>
+        <screen/>
         <sys_class_name>sys_sg_item_stream_segment</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-06-05 07:21:03</sys_created_on>

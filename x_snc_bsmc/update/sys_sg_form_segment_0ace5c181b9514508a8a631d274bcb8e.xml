@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_segment">
     <sys_sg_form_segment action="INSERT_OR_UPDATE">
-        <embedded_screen display_value="Details">82ce5c181b9514508a8a631d274bcb8c</embedded_screen>
-        <form display_value="Quick-scan a barcode">f9ce5c181b9514508a8a631d274bcb89</form>
+        <embedded_screen/>
+        <form/>
         <order>10</order>
         <sys_class_name>sys_sg_form_segment</sys_class_name>
         <sys_created_by>admin</sys_created_by>

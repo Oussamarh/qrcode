@@ -4,7 +4,7 @@
         <icon display_value="Star Icon">16bbe5c353013300f214ddeeff7b12dd</icon>
         <label>Scan</label>
         <roles/>
-        <screen display_value="Quick-scan a Barcode">338bd8941b9514508a8a631d274bcb3a</screen>
+        <screen/>
         <sys_class_name>sys_sg_applet_tab</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-06-05 07:18:15</sys_created_on>

@@ -9,30 +9,47 @@
         <name>BarcodeScanHelper</name>
         <script><![CDATA[var BarcodeScanHelper = Class.create();
 BarcodeScanHelper.prototype = {
-	initialize: function initialize () {},
+	initialize: function initialize () {
+		this._gr = new GlideRecord(BarcodeScanConstants.TABLE);
+		this._gr.get(BarcodeScanConstants.SYS_ID);
+	},
+
+	setCode: function setCode(barcodeContent) {
+		var data = this._parseData();
+		data.code = barcodeContent;
+		this._setData(data);
+	},
 
 	prepareData: function getDeepLink () {
-		var dlg = new global.MobileDeepLinkGenerator("request");
-		var data = _prepareScanState();
-		data.link = deepLinkGenerator.getFormScreenLink(
+		var data = this._parseData();
+		
+		var guid = gs.generateGUID();
+		data.guid = guid;
+		data.code = "";
+		this._setData(data);
+		
+		data.link = new global.MobileDeepLinkGenerator("request").getFormScreenLink(
 			BarcodeScanConstants.FORM_SCREEN_SYS_ID,
 			data.table,
 			data.sysId);
 		return data;
+	},
 
-		function _prepareScanState () {
-			var gr = new GlideRecord(BarcodeScanConstants.TABLE);
-			gr.get(gs.getUserID());
+	getConstants: function getConstants () {
+		return {
+			TABLE: BarcodeScanConstants.TABLE,
+			FIELD: BarcodeScanConstants.FIELD,
+			SYS_ID: BarcodeScanConstants.SYS_ID
+		};
+	},
+	
+	_parseData: function () {
+		return JSON.parse(this._gr.getValue(BarcodeScanConstants.FIELD));
+	},
 
-			var guid = gs.generateGUID();
-
-			var data = JSON.parse(gr.getValue(BarcodeScanConstants.FIELD));
-			data.guid = guid;
-			gr.setValue(BarcodeScanConstants.FIELD, JSON.parse(data));
-			gr.update();
-
-			return data;
-		}
+	_setData: function (data) {
+		this._gr.setValue(BarcodeScanConstants.FIELD, JSON.stringify(data));
+		this._gr.update();
 	},
 
 	type: 'BarcodeScanHelper'
@@ -41,13 +58,13 @@ BarcodeScanHelper.prototype = {
         <sys_created_by>dylan.lindgren</sys_created_by>
         <sys_created_on>2020-06-04 03:24:48</sys_created_on>
         <sys_id>9124da7b1b49d0508a8a631d274bcb1d</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>BarcodeScanHelper</sys_name>
         <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope>
         <sys_update_name>sys_script_include_9124da7b1b49d0508a8a631d274bcb1d</sys_update_name>
-        <sys_updated_by>dylan.lindgren@snc</sys_updated_by>
-        <sys_updated_on>2020-06-07 10:04:48</sys_updated_on>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2020-06-07 11:49:36</sys_updated_on>
     </sys_script_include>
 </record_update>
