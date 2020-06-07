@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Service Catalog core applications" source="com.glideapp.servicecatalog">3d4d54b31b0410108a8a631d274bcb2d</dependency>
+        <min_version/>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2020-06-04 00:39:32</sys_created_on>
+        <sys_id>a24971fb1b09d0508a8a631d274bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2020-06-04 00:39:32</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

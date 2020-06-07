@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Service Catalog">d128ead2c0a8016501c6bbd3f9c03678</application>
+        <assessment/>
+        <device_type/>
+        <filter table="sys_client_extension_instance">point=x_snc_bsmc.BarcodeResponse^EQ<item endquery="false" field="point" goto="false" newquery="false" operator="=" or="false" value="x_snc_bsmc.BarcodeResponse"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>700</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_client_extension_instance</name>
+        <order>720</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2020-06-04 06:41:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>43dbcbb71bc9d0508a8a631d274bcb5f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Scripts</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope>
+        <sys_update_name>sys_app_module_43dbcbb71bc9d0508a8a631d274bcb5f</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2020-06-04 07:24:50</sys_updated_on>
+        <timeline_page/>
+        <title>Scripts</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</application>
+        <file_path/>
+        <instance_id>93755833db40d414c6e711f84896193c</instance_id>
+        <instance_name>dl2</instance_name>
+        <name>sys_app_module_43dbcbb71bc9d0508a8a631d274bcb5f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Service Catalog">d128ead2c0a8016501c6bbd3f9c03678</application><assessment/><device_type/><filter table="sys_client_extension_instance">point=x_snc_bsmc.BarcodeResponse^EQ<item endquery="false" field="point" goto="false" newquery="false" operator="=" or="false" value="x_snc_bsmc.BarcodeResponse"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>700</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>sys_client_extension_instance</name><order>720</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>dylan.lindgren</sys_created_by><sys_created_on>2020-06-04 06:41:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>43dbcbb71bc9d0508a8a631d274bcb5f</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Scripts</sys_name><sys_overrides/><sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package><sys_policy/><sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope><sys_update_name>sys_app_module_43dbcbb71bc9d0508a8a631d274bcb5f</sys_update_name><sys_updated_by>dylan.lindgren</sys_updated_by><sys_updated_on>2020-06-04 07:24:50</sys_updated_on><timeline_page/><title>Scripts</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-472071075</payload_hash>
+        <record_name>Scripts</record_name>
+        <reverted_from/>
+        <source>0f97f97b1b09d0508a8a631d274bcb3a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2020-06-04 07:24:50</sys_created_on>
+        <sys_id>ab06df3f1bc9d0508a8a631d274bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1727e37dfc50000001</sys_recorded_at>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2020-06-04 07:24:50</sys_updated_on>
+        <type>Module</type>
+        <update_guid>6306df3f9bc9d0501bfab9666ad74e0f</update_guid>
+        <update_guid_history>6306df3f9bc9d0501bfab9666ad74e0f:-472071075,bc4193bbe3c9d050e275a0fde301559a:418791975,7990977b18c9d05096a66d0ad5127b5a:656330373,a630537bccc9d050c0ff31e88bb781e1:669263153,cd8f4f3b9dc9d050c472cb3f42fcc50d:656330373,f2be43f7dcc9d050df1fffa8a007102f:1429629501,373c4fb78ec9d05007a3ba0b24527e7a:1206088644,701c0fb709c9d050618d7555fbc91909:1819525930</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Scripts">5fba90941b9514508a8a631d274bcb69</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-05 07:03:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>07201b43168f4d8880e5fb445e96ee90</sys_id>
+        <sys_metadata>43dbcbb71bc9d0508a8a631d274bcb5f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_client_extension_instance</sys_name>
+        <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope>
+        <sys_scope_delete display_value="">ce3034c1740e449cbe4ccb5d4bd51499</sys_scope_delete>
+        <sys_update_name>sys_app_module_43dbcbb71bc9d0508a8a631d274bcb5f</sys_update_name>
+        <sys_update_version display_value="sys_app_module_43dbcbb71bc9d0508a8a631d274bcb5f">ab06df3f1bc9d0508a8a631d274bcb0f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-05 07:03:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

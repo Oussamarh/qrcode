@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_screen">
+    <sys_sg_form_screen action="INSERT_OR_UPDATE">
+        <available_offline>false</available_offline>
+        <data_item display_value="Barcode Scan">fa4bd4941b9514508a8a631d274bcb24</data_item>
+        <description>Barcode scan</description>
+        <dynamic_prefetch_count/>
+        <fetch_type>not_required</fetch_type>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="icon-Images">2bebdc941b9514508a8a631d274bcb2c</icon>
+        <item_view display_value="Quick-scan a Barcode Header Item View">246c50d41b9514508a8a631d274bcb6d</item_view>
+        <name>Quick-scan a Barcode</name>
+        <roles_override/>
+        <sys_class_name>sys_sg_form_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-05 07:09:35</sys_created_on>
+        <sys_id>338bd8941b9514508a8a631d274bcb3a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Quick-scan a Barcode</sys_name>
+        <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope>
+        <sys_update_name>sys_sg_form_screen_338bd8941b9514508a8a631d274bcb3a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-05 07:16:46</sys_updated_on>
+        <table/>
+    </sys_sg_form_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=338bd8941b9514508a8a631d274bcb3a"/>
+</record_update>

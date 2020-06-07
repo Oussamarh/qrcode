@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_bsmc.BarcodeScanConstants</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>BarcodeScanConstants</name>
+        <script><![CDATA[var BarcodeScanConstants = Class.create();
+BarcodeScanConstants.prototype = {
+    initialize: function() {},
+
+    type: 'BarcodeScanConstants'
+};
+
+BarcodeScanConstants.TABLE = "sys_user";
+BarcodeScanConstants.FIELD = "x_snc_bsmc_code_data";
+BarcodeScanConstants.FORM_SCREEN_SYS_ID = "f9ce5c181b9514508a8a631d274bcb89";]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>dylan.lindgren@snc</sys_created_by>
+        <sys_created_on>2020-06-07 09:59:00</sys_created_on>
+        <sys_id>24e55bfc1b1d54508a8a631d274bcbcc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BarcodeScanConstants</sys_name>
+        <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope>
+        <sys_update_name>sys_script_include_24e55bfc1b1d54508a8a631d274bcbcc</sys_update_name>
+        <sys_updated_by>dylan.lindgren@snc</sys_updated_by>
+        <sys_updated_on>2020-06-07 10:03:19</sys_updated_on>
+    </sys_script_include>
+</record_update>

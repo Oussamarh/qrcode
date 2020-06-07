@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function BarcodeScannerCtrl ($scope, spUtil, $http) {
+
+	var c = this;
+
+	var varName = $scope.$parent.$parent.field.name;
+	var g_form = $scope.page.g_form;
+	var userId = $scope.user.sys_id;
+
+	function handleChange (r) {
+		if (r.data.changes.indexOf('x_snc_bsmc_code') !== -1) {
+			$http.get('/api/now/table/sys_user', {
+				params: {
+					sysparm_query: 'sys_id=' + userId,
+					sysparm_limit: 1,
+					sysparm_fields: 'sys_id,x_snc_bsmc_code,x_snc_bsmc_guid'
+				}
+			}).then(function (r) {
+				if (r.data.result[0].x_snc_bsmc_guid === c.data.scanner.guid) {
+					g_form.setValue(varName, r.data.result[0].x_snc_bsmc_code);
+				}
+			});
+		}
+	}
+
+	spUtil.recordWatch($scope, "sys_user", "sys_id=" + userId, handleChange);
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.x-snc-bsmc-area {
+  background-color: #f3f3f3;
+  padding: 10px;
+  text-align: right;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+img {
+  max-width: 200px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>x_snc_bsmc_barcode_scanner</id>
+        <internal>false</internal>
+        <link><![CDATA[function BarcodeScannerLink (scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>(BSMC) Barcode Scanner</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function BarcodeScannerServer() {
+	var helper = new BarcodeScanHelper();
+	data.scanner = helper.prepareData();
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2020-06-04 02:35:24</sys_created_on>
+        <sys_id>bbc3967b1b49d0508a8a631d274bcbb0</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>(BSMC) Barcode Scanner</sys_name>
+        <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope>
+        <sys_update_name>sp_widget_bbc3967b1b49d0508a8a631d274bcbb0</sys_update_name>
+        <sys_updated_by>dylan.lindgren@snc</sys_updated_by>
+        <sys_updated_on>2020-06-07 10:08:16</sys_updated_on>
+        <template><![CDATA[<div class="x-snc-bsmc-area">
+  <a ng-href="{{::c.data.scanner.link}}">
+    <img src="/x_snc_bsmc_scanbutton.png"/>
+  </a>
+</div>]]></template>
+    </sp_widget>
+</record_update>
