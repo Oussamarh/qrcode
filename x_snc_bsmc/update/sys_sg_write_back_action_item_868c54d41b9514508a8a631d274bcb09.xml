@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script><![CDATA[(function WriteBackAction(input) {
+	new BarcodeScanHelper().setCode(input.barcode_content);
+})(input);]]></execution_script>
+        <name>Save scanned barcode content</name>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-05 07:11:53</sys_created_on>
+        <sys_id>868c54d41b9514508a8a631d274bcb09</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Save scanned barcode content</sys_name>
+        <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_868c54d41b9514508a8a631d274bcb09</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2020-06-07 11:46:14</sys_updated_on>
+        <table>sys_user</table>
+        <template/>
+        <type>script</type>
+        <use_current_record_as_condition>false</use_current_record_as_condition>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=868c54d41b9514508a8a631d274bcb09"/>
+</record_update>

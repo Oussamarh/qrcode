@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_view">
+    <sys_sg_item_view action="INSERT_OR_UPDATE">
+        <data_item/>
+        <dependency_fields/>
+        <item_view_json>{"Type":"ViewGroup","Margin":{"Top":17,"Bottom":15},"Orientation":"Vertical","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"Text","Margin":{"Top":9},"TextColor":"#293e40","TextAlignment":"Left","MaxLines":2,"Font":{"Weight":"regular","Size":18},"studio_template_field_id":"E1","Text":"Please enable your flash in scenes with poor lighting to ensure the code is correctly read.","Id":22123}],"studio_card_id":"9599488923452300a8ed7f4fc7bf652e","Id":28090}</item_view_json>
+        <name>Barcode scan header item view</name>
+        <short_description/>
+        <sys_class_name>sys_sg_item_view</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2020-06-07 11:01:10</sys_created_on>
+        <sys_id>f9546b381b5d54508a8a631d274bcb40</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Barcode scan header item view</sys_name>
+        <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope>
+        <sys_update_name>sys_sg_item_view_f9546b381b5d54508a8a631d274bcb40</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2020-06-07 11:34:18</sys_updated_on>
+        <table>sys_user</table>
+        <ui_styles/>
+    </sys_sg_item_view>
+    <sys_translated_text action="delete_multiple" query="documentkey=f9546b381b5d54508a8a631d274bcb40"/>
+</record_update>

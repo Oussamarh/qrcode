@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function BarcodeScannerCtrl ($scope, spUtil, $location) {
+	
+	var c = this;
+	
+	c.isMobile = spUtil.isMobile();
+
+	if (c.options.demo_mode === 'false' && c.isMobile) {
+		var varName = $scope.$parent.$parent.field.name;
+		var g_form = $scope.page.g_form;
+		var userId = $scope.user.sys_id;
+		spUtil.recordWatch($scope, 
+											 c.data.constants.TABLE,
+											 "sys_id=" + userId,
+											 function handleChange (r) {
+			if (r.data.changes.indexOf(c.data.constants.FIELD) !== -1) {
+				var json = JSON.parse(r.data.record[c.data.constants.FIELD].value);
+				if (json.guid === c.data.scanner.guid) {
+					g_form.setValue(varName, json.code);
+				}
+			}
+		});
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.x-snc-bsmc-area {
+  background: linear-gradient(#FFFFFF, #F1F1F1);
+  display: flex;
+  justify-content: space-between;
+  color: #2A3738;
+  text-align: left;
+  padding: 10px;
+  margin-right: 10px;
+  align-items: center;
+  
+  &gt; div {
+    &amp;:first-of-type {
+      flex: 0 1 auto;
+      padding-right: 30px;
+    }
+    
+    &amp;:last-of-type {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+
+a {
+	border-radius: 5px;
+  border: 1px solid #333333;
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 3px 5px 3px 2px;
+  color: #2A3738;
+  
+  svg {
+  	margin-right: 5px;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{"options": 
+	{
+		"demo_mode": true
+	}
+}</demo_data>
+        <description>Widget variable to allow scanning of barcodes using the Now Mobile ServiceNow application for iOS and Android.</description>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>x_snc_bsmc_barcode_scanner</id>
+        <internal>false</internal>
+        <link><![CDATA[function BarcodeScannerLink (scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>(BSMC) Barcode Scanner</name>
+        <option_schema>[{"hint":"Whether the widget should just display in preview mode, or actually be functional.","name":"demo_mode","section":"Behavior","default_value":"false","label":"Enable demo mode","type":"boolean"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function BarcodeScannerServer() {
+	
+	var helper = new BarcodeScanHelper();
+	data.constants = helper.getConstants();
+	
+	if (options.demo_mode === 'false' && gs.isMobile()) {
+		data.scanner = helper.prepareData();
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>dylan.lindgren</sys_created_by>
+        <sys_created_on>2020-06-04 02:35:24</sys_created_on>
+        <sys_id>bbc3967b1b49d0508a8a631d274bcbb0</sys_id>
+        <sys_mod_count>97</sys_mod_count>
+        <sys_name>(BSMC) Barcode Scanner</sys_name>
+        <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope>
+        <sys_update_name>sp_widget_bbc3967b1b49d0508a8a631d274bcbb0</sys_update_name>
+        <sys_updated_by>dylan.lindgren</sys_updated_by>
+        <sys_updated_on>2020-06-07 12:36:44</sys_updated_on>
+        <template><![CDATA[<div class="x-snc-bsmc-area">
+  <div>
+    ${You can fill the above field by scanning a barcode or QR code!}
+  </div>
+  <div>
+    <a ng-href="{{::c.data.scanner.link}}">
+      <svg width="24px" height="19px" viewBox="0 0 24 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="scan" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path d="M21.4113462,0 L21.4038462,0 L19.3817308,0.0195735648 L4.61538462,0 L4.60615385,0 L2.48653846,0.0195735648 C1.09211538,0.0225392564 0,1.19042862 0,2.68098523 L0,16.3391815 C0,17.8309244 1.09615385,19 2.49230769,19 L2.50096154,19 L4.61884615,18.9804264 L19.3834615,19 L19.3932692,19 L21.4165385,18.9804264 C22.843657,18.9761798 23.9987349,17.7862501 24,16.3190148 L24,2.66141167 C23.9984103,1.19223212 22.8403612,0.00163442086 21.4113462,0 Z M5.53846154,13.2862985 C5.53846154,13.8104285 5.12518592,14.2353198 4.61538462,14.2353198 C4.10558331,14.2353198 3.69230769,13.8104285 3.69230769,13.2862985 L3.69230769,5.69412793 C3.69230769,5.16999793 4.10558331,4.74510661 4.61538462,4.74510661 C5.12518592,4.74510661 5.53846154,5.16999793 5.53846154,5.69412793 L5.53846154,13.2862985 Z M9.23076923,15.1843411 C9.23076923,15.7084712 8.81749362,16.1333625 8.30769231,16.1333625 C7.797891,16.1333625 7.38461538,15.7084712 7.38461538,15.1843411 L7.38461538,3.79608529 C7.38461538,3.27195528 7.797891,2.84706397 8.30769231,2.84706397 C8.81749362,2.84706397 9.23076923,3.27195528 9.23076923,3.79608529 L9.23076923,15.1843411 Z M12.9230769,14.2353198 C12.9230769,14.7594498 12.5098013,15.1843411 12,15.1843411 C11.4901987,15.1843411 11.0769231,14.7594498 11.0769231,14.2353198 L11.0769231,4.74510661 C11.0769231,4.22097661 11.4901987,3.79608529 12,3.79608529 C12.5098013,3.79608529 12.9230769,4.22097661 12.9230769,4.74510661 L12.9230769,14.2353198 Z M16.6153846,15.1843411 C16.6153846,15.7084712 16.202109,16.1333625 15.6923077,16.1333625 C15.1825064,16.1333625 14.7692308,15.7084712 14.7692308,15.1843411 L14.7692308,3.79608529 C14.7692308,3.27195528 15.1825064,2.84706397 15.6923077,2.84706397 C16.202109,2.84706397 16.6153846,3.27195528 16.6153846,3.79608529 L16.6153846,15.1843411 Z M20.3076923,13.2862985 C20.3076923,13.8104285 19.8944167,14.2353198 19.3846154,14.2353198 C18.8748141,14.2353198 18.4615385,13.8104285 18.4615385,13.2862985 L18.4615385,5.69412793 C18.4615385,5.16999793 18.8748141,4.74510661 19.3846154,4.74510661 C19.8944167,4.74510661 20.3076923,5.16999793 20.3076923,5.69412793 L20.3076923,13.2862985 Z" id="scan" fill="#2A3738" fill-rule="nonzero"></path>
+          </g>
+        </svg>
+      <div>
+        ${Scan Code}
+      </div>
+    </a>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
