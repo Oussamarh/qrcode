@@ -97,15 +97,15 @@ a {
         <sys_created_by>dylan.lindgren</sys_created_by>
         <sys_created_on>2020-06-04 02:35:24</sys_created_on>
         <sys_id>bbc3967b1b49d0508a8a631d274bcbb0</sys_id>
-        <sys_mod_count>97</sys_mod_count>
+        <sys_mod_count>99</sys_mod_count>
         <sys_name>(BSMC) Barcode Scanner</sys_name>
         <sys_package display_value="Barcode Scan for Mobile Catalog" source="x_snc_bsmc">c397f97b1b09d0508a8a631d274bcb38</sys_package>
         <sys_policy/>
         <sys_scope display_value="Barcode Scan for Mobile Catalog">c397f97b1b09d0508a8a631d274bcb38</sys_scope>
         <sys_update_name>sp_widget_bbc3967b1b49d0508a8a631d274bcbb0</sys_update_name>
         <sys_updated_by>dylan.lindgren</sys_updated_by>
-        <sys_updated_on>2020-06-07 12:36:44</sys_updated_on>
-        <template><![CDATA[<div class="x-snc-bsmc-area">
+        <sys_updated_on>2020-06-09 02:16:46</sys_updated_on>
+        <template><![CDATA[<div class="x-snc-bsmc-area" ng-if="::c.isMobile">
   <div>
     ${You can fill the above field by scanning a barcode or QR code!}
   </div>
