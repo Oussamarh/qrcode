@@ -25,15 +25,15 @@
         <sys_created_by>dylan.lindgren</sys_created_by>
         <sys_created_on>2020-06-04 00:32:12</sys_created_on>
         <sys_id>c397f97b1b09d0508a8a631d274bcb38</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>dylan.lindgren</sys_updated_by>
-        <sys_updated_on>2020-06-04 00:38:18</sys_updated_on>
+        <sys_updated_on>2020-06-09 04:06:29</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role display_value="user" name="user">b05926fa0a0a0aa7000130023e0bde98</user_role>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
     </sys_app>
     <sys_attachment action="INSERT_OR_UPDATE">
         <average_image_color>#303030</average_image_color>
