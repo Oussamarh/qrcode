@@ -13,7 +13,7 @@ Simply install this app and your catalog items and record producers can support 
 
 The app has been uploaded to ServiceNow Share.
 
-1. [Download the XML from ServiceNow Share.](https://developer.servicenow.com/connect.do#!/share/contents/4661767_barcode_scan_for_mobile_catalog?v=1.0&t=PRODUCT_DETAILS)
+1. [Download the XML from ServiceNow Share.](https://developer.servicenow.com/connect.do#!/share/contents/4661767_barcode_scan_for_mobile_catalog)
 2. Import the update set by uploading the XML to the instance using [the instructions on the ServiceNow Documentation](https://docs.servicenow.com/bundle/helsinki-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html).
 3. [Preview and Commit the update set.](https://docs.servicenow.com/bundle/orlando-application-development/page/build/system-update-sets/task/t_CommitAnUpdateSet.html)
 
